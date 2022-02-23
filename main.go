@@ -71,12 +71,12 @@ func main() {
 			if opts.Lights[0].Brightness > maxBrightness {
 				opts.Lights[0].Brightness = maxBrightness
 			}
-		case "decrease-temperature":
+		case "increase-temperature":
 			opts.Lights[0].Temperature -= temperatureStep
 			if opts.Lights[0].Temperature < minTemperature {
 				opts.Lights[0].Temperature = minTemperature
 			}
-		case "increase-temperature":
+		case "decrease-temperature":
 			opts.Lights[0].Temperature += temperatureStep
 			if opts.Lights[0].Temperature > maxTemperature {
 				opts.Lights[0].Temperature = maxTemperature
